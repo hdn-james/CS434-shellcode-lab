@@ -14,7 +14,7 @@ section .text
       mov  ecx, esp     ; Get the address of argv[]
    
       ; For environment variable 
-      xor  edx, edx     ; No env variables 
+      xor  edx, edx     ; No environment variables 
 
       ; Invoke execve()
       xor  eax, eax     ; eax = 0x00000000
