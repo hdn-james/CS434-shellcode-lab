@@ -11,7 +11,7 @@ section .text
 			mov [ebx+22], al		; save 0x00 (1 byte) to memory at address ebx+22 = third *
 			mov [ebx+27], eax		; save 0x00 (4 bytes) to first ****
 
-			mov [ebx+23],  ebx	; put /usr/bin/env command in arg0
+			mov [ebx+23], ebx		; put /usr/bin/env command in arg0
 			
 			lea edx, [ebx+13]		; get the address of first env var
 			mov [ebx+31], edx		; load address of first env var to env0
